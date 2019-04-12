@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.jitsi.meet;
+package com.digitalk.video;
 
 import android.app.Application;
 

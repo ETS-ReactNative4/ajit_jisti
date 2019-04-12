@@ -171,13 +171,14 @@ class SettingsView extends AbstractSettingsView<Props> {
                     <FormRow
                         fieldSeparator = { true }
                         label = 'settingsView.serverURL'>
-                        <TextInput
-                            autoCapitalize = 'none'
-                            autoCorrect = { false }
-                            onBlur = { this._onBlurServerURL }
-                            onChangeText = { this._onChangeServerURL }
-                            placeholder = { this.props._serverURL }
-                            value = { _settings.serverURL } />
+                      <TextInput
+                          autoCapitalize = 'none'
+                          editable = {false}
+	                      autoCorrect = { false }
+                          onBlur = { this._onBlurServerURL }
+                          onChangeText = { this._onChangeServerURL }
+                          placeholder = { this.props._serverURL }
+                          value = { _settings.serverURL } />
                     </FormRow>
                     <FormRow
                         fieldSeparator = { true }
@@ -272,3 +273,15 @@ function _mapStateToProps(state) {
 }
 
 export default translate(connect(_mapStateToProps)(SettingsView));
+
+/*
+   <TextInput
+     autoCapitalize = 'none'
+     autoCorrect = { false }
+     onBlur = { this._onBlurServerURL }
+     onChangeText = { this._onChangeServerURL }
+     placeholder = 'https://video.vallet.co.in'
+     value = { _settings.serverURL } />
+*/
+
+/* <Text>https://video.vallet.co.in</Text> */

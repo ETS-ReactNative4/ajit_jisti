@@ -19,7 +19,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId 'org.jitsi.meet'
+        applicationId 'com.digitalk.video'
         versionCode vcode
         versionName project.appVersion
 

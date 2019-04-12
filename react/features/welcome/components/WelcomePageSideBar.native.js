@@ -23,17 +23,20 @@ import styles, { SIDEBAR_AVATAR_SIZE } from './styles';
 /**
  * The URL at which the privacy policy is available to the user.
  */
-const PRIVACY_URL = 'https://jitsi.org/meet/privacy';
+//const PRIVACY_URL = 'https://jitsi.org/meet/privacy';
+const PRIVACY_URL = 'https://vallet.co.in/privacy.html';
 
 /**
  * The URL at which the user may send feedback.
  */
-const SEND_FEEDBACK_URL = 'mailto:support@jitsi.org';
+//const SEND_FEEDBACK_URL = 'mailto:support@jitsi.org';
+const SEND_FEEDBACK_URL = 'mailto:tellambrish@gmail.com';
 
 /**
  * The URL at which the terms (of service/use) are available to the user.
  */
-const TERMS_URL = 'https://jitsi.org/meet/terms';
+//const TERMS_URL = 'https://jitsi.org/meet/terms';
+const TERMS_URL = 'https://vallet.co.in/terms.html';
 
 type Props = {
 

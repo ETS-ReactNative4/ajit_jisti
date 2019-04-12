@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.jitsi.meet;
+package com.digitalk.video;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -25,10 +25,11 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.KeyEvent;
 
+import com.digitalk.video.BuildConfig;
 import org.jitsi.meet.sdk.JitsiMeet;
 import org.jitsi.meet.sdk.JitsiMeetActivity;
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
-
+//
 import com.crashlytics.android.Crashlytics;
 import com.google.firebase.dynamiclinks.FirebaseDynamicLinks;
 import io.fabric.sdk.android.Fabric;
@@ -93,13 +94,15 @@ public class MainActivity extends JitsiMeetActivity {
         return false;
     }
 
+//   .setServerURL(buildURL("https://meet.jit.si"))
+
     @Override
     protected void initialize() {
         // Set default options
         JitsiMeetConferenceOptions defaultOptions
             = new JitsiMeetConferenceOptions.Builder()
                 .setWelcomePageEnabled(true)
-                .setServerURL(buildURL("https://meet.jit.si"))
+                .setServerURL(buildURL("https://video.vallet.co.in"))
                 .build();
         JitsiMeet.setDefaultConferenceOptions(defaultOptions);
 

@@ -1,4 +1,4 @@
-package org.jitsi.meet;
+package com.digitalk.video;
 
 import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.module.AppGlideModule;
